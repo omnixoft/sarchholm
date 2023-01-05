@@ -1,0 +1,605 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>SarchHom - Your real estate solution</title>
+    <meta name="description" content="SarchHolm offers a comprehensive real estate solution to manage all of your property listing which can also be customized according to your requirements." />
+    <meta name="author" content="LionCoders">
+    <meta name="copyright" content="LionCoders">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700">
+    <link rel="stylesheet" href="assets1/css/documenter_style.css" media="all">
+    <link rel="stylesheet" href="assets1/css/jquery.mCustomScrollbar.css" media="all">
+
+    <script src="assets1/js/jquery.js"></script>
+    <script src="assets1/js/jquery.mCustomScrollbar.js"></script>
+    <script src="assets1/js/smooth-scroll.min.js"></script>
+    <script src="assets1/js/typeAhead.js"></script>
+    <script src="assets1/js/script.js"></script>
+</head>
+
+<body>
+<div id="documenter_sidebar">
+    <img src="assets1/images/logo-blue.png" style="border: none;margin: 0 10px -10px;width: 200px;height: 50px">
+    <ul id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+        <li><a href="#server_requirement" title="SERVER REQUIREMENTS">Server Requirements</a></li>
+        <li><a href="#install" title="INSTALL">Install</a></li>
+        <li><a href="#general_error" title="Profile">Error Handeling</a></li>
+        <li><a href="#log_in" title="Log In">Log In</a></li>
+        <li><a href="#admin_dashboard" title="Admin DASHBOARD">Admin Dashboard</a></li>
+        <li><a href="#datatable_options" title="Datatable Options">Datatable Options</a></li>
+
+        <li><a href="#location" title="Location">Location</a></li>
+
+        <li><a href="#property_category" title="Property Category">Property Category</a></li>
+        <li><a href="#property_facility" title="Property Facility">Property Facility</a></li>
+        <li><a href="#property_listing" title="Property Listing">Property Listing</a></li>
+
+        <li><a href="#packages" title="Packages">Packages</a></li>
+
+        <li><a href="#blog" title="Blog">Blog</a></li>
+        <li><a href="#profile" title="Profile">Profile</a></li>
+        <li><a href="#settings" title="Profile">Settings</a></li>
+        <li><a href="#support" title="Profile">Support</a></li>
+
+
+
+    </ul>
+</div>
+<div id="documenter_content">
+
+
+    <div id="the-basics">
+        <input class="typeahead form-control" type="text" placeholder="Search">
+    </div>
+
+
+    <section id="documenter_cover">
+        <h1>SarchHolm- Your real estate solution
+        </h1>
+        <div id="documenter_buttons">
+        </div>
+        <hr>
+        <ul>
+            <li>by : LionCoders</li>
+            <li>Version : 1.0</li>
+            <li>Support : <a href="mailto:support@lion-coders.com">support@lion-coders.com</a></li>
+        </ul>
+        <p> SarchHolm is a software that will help real estate agencies and real estate agents to manage their  property listing. Buyer or Customer can find their desire property by this website. We believe that this software is suitable for managing the
+            property listing within a country to achieve the organization’s mission and reinforce the culture.This user
+            friendly software is fully responsive and has many features. Hopefully this software will be helpful to manage
+            your
+            workplace to functionate to it's full potential.</p>
+        <p>
+            The documentation is written in a chronological order . There are some dependencies that need to be
+            maintained
+            properly in a sequential order . Please try to follow that . You can also search using the search bar for
+            a specific
+            query.
+        </p>
+    </section>
+    <section id="server_requirement">
+        <div class="page-header">
+            <h3>SERVER REQUIREMENT</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            The software is built on most popular PHP framework Laravel(Version 8). The minimum
+            requirements for running the software is listed below .Please do check if your server matches those
+            requirements</p>
+        <ul>
+            <li>PHP &gt;= 7.3.0</li>
+            <li>BCMath PHP Extension</li>
+            <li>Ctype PHP Extension</li>
+            <li>Fileinfo PHP Extension</li>
+            <li>JSON PHP Extension</li>
+            <li>Mbstring PHP Extension</li>
+            <li>OpenSSL PHP Extension</li>
+            <li>PDO PHP Extension</li>
+            <li>Tokenizer PHP Extension</li>
+            <li>XML PHP Extension</li>
+        </ul>
+        <p>
+            &nbsp;</p>
+        <p>
+            <strong>Please note if you try to install the application on any other server say LiteSpeed or IIS, you
+                may get undesirable result. We do not recommend you to use other server than Apache or Nginx.<br><br>
+                <span>NB:</span> We do not provide support for installation in localhost. Please follow the installation process,
+            below.</strong></p>
+    </section>
+    <section id="install">
+        <div class="page-header">
+            <h3>INSTALL</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            <strong>Localhost</strong><br>
+            If you are installing on localhost, please keep in mind that you’ll need Internet for installation. After installation, you can use SarchHolm without Internet.
+            We suggest you use XAMPP for localhost. You can use other solutions like WAMP, MAMP etc. as well and installation process for all of them are same. Create a folder inside htdocs folder inside your XAMPP installation. Now copy the zip folder you downloaded from Codecanyon to htdocs folder and unzip it there. Rename it to whatever you want. Say, you have named it- ‘my-folder’.
+            Now start your XAMPP (or whatever you are using) and go to your browser and access SarchHolm from your browser like- localhost/my-folder/.
+        </p>
+        <p>
+            <strong>Online Hosting</strong><br>
+            Upload the zip folder you downloaded from Codecanyon to your hosting and unzip it. Please make sure you configure your web hosting’s settings, so that it shows hidden files and folders. This is to ensure that if you copy/move the contents from the unzipped folder to any other location, you copy all the files including ‘.htaccess’, ‘.env’ files which are necessary for the proper functioning of the software.
+            Now you can access the folder where you have SarchHolm from your browser.
+        </p>
+        <p>
+            Now follow the installation process below.
+        </p>
+
+
+        <h2><strong>Step 1</strong></h2>
+        <ul>
+            <li>
+                Please read the license arrangement before proceeding.
+            </li>
+
+            <li> You need to accept and continue for going to
+                the next step.
+            </li>
+            <img alt="" src="assets1/images/step-1.png">
+        </ul>
+        <h2><strong>Step 2</strong></h2>
+        <ul>
+            <li>
+                The system will automatically check for the server requirements. If all the requirements are
+                fulfilled,
+                You can proceed for further action.
+            </li>
+            <img alt="" src="assets1/images/step-2.png">
+        </ul>
+        <h2><strong>Step 3</strong></h2>
+        <ul>
+            <li>
+                You have to fill up the form with correct information.
+            </li>
+            <li>Please input the purchase code.
+            </li>
+            <li>
+                Input your database host e.g(localhost).
+            </li>
+            <li>
+                Your database username e.g(root).
+            </li>
+            <li>your
+                database password (if any).
+            </li>
+            <li>
+                The database name that you have already created.
+            </li>
+            <li>
+                Click on submit.
+            </li>
+            The system wil automatically import the database. This is a
+            batch process,please wait patiently while the action is processing.
+            </li>
+            <img alt="" src="assets1/images/step-3.png">
+            <img alt="" src="assets1/images/step-3-1.png">
+        </ul>
+        <h2><strong>Step 4</strong></h2>
+        <ul>
+            <li>
+                Congratulations! You have successfully installed SarchHolm.<br>
+                <strong>Note :</strong> your project folder contains 'install' folder, then please delete
+                the folder.
+            </li>
+            <img alt="" src="assets1/images/step-4.png">
+        </ul>
+
+        <h2><strong>Error</strong></h2>
+        <ul>
+            <li>
+                If you face a "Fatal error: Maximum execution time of ** seconds exceeded",
+                Do not worry, the software is installed properly.<br>
+                <strong>Note :</strong> your project folder contains 'install' folder, then please delete
+                the folder.
+            </li>
+        </ul>
+
+        <p>After successful installation you can login with <br>
+            email:<strong>admin@lion-coders.com</strong><br>
+            password:<strong>admin</strong></p>
+        <br>
+
+    </section>
+
+    <section id="general_error">
+        <div class="page-header">
+            <h3>Error Handeling</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            If You face any error like- 500 server error or 403 server error, please first go to your project root folder and open the .env file and set APP_DEBUG=true. Then go to the page where you faced the error and reload the page.
+            Now you should  take a screenshot and send it to us at Support : <a href="mailto:support@lion-coders.com">support@lion-coders.com</a>, It will help us to quickly resolve the error.
+        <p>
+            <img alt="" src="assets1/images/general_error.png">
+        </p>
+    </section>
+    <section id="log_in">
+        <div class="page-header">
+            <h3>Log In</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            After installation go to the project/root url.Then you will be prompt to homepage.
+            In homepage at upper right corner you will get the login icon. After clicking the login
+            you will you will redirect to login page.
+
+        </p>
+    
+        <p>
+            <img alt="" src="assets1/images/login1.png">
+        </p>
+        <p>
+            The login credentials provided below are for initial usage only - do not forget
+            to update your password after first successful login.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/login2.png">
+            <h3>Admin Login:</h3>
+            <ul>
+                <li>Email ::: admin@lion-coders.com</li>
+                <li>Password ::: admin</li>
+            </ul>
+
+            <h3>Agent Login:</h3>
+            <ul>
+                <li>Email ::: tony_stark@sarchholm.com</li>
+                <li>Password ::: 000000</li>
+            </ul>
+        </p>
+        <p>
+            After successful login you will be redirected to the dashboard.
+        </p>
+    </section>
+
+    <section id="admin_dashboard">
+        <div class="page-header">
+            <h3>Admin DASHBOARD</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            The system offers an informative,interactive and user friendly admin dashboard.
+            The dashboard shows summarized information about the organization in a nutshell.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/dashboard1.png">
+        </p>
+
+        <ol>
+            <li>This is the logo of your site.You can update/change it from <strong>General Settings</strong> under
+                <strong>Customize Settings</strong></li>
+            <li>This is the name of your organization.You can update/change it from <strong>General
+                Settings</strong> under <strong>Customize Settings</strong></li>
+            <li>View the software in full screen mode</li>
+            <li>Notifications</li>
+        </ol>
+
+        <p>
+            <strong>Published Property</strong><br>
+            This section will show the total published properties.
+        </p>
+        <p>
+            <strong>Total Reviews</strong><br>
+            This section will show information about the reviews.
+        </p>
+
+        <p>
+            <strong>Total Views</strong><br>
+            This section will show the total page views.
+        </p>
+        <p>
+            <strong>Published News</strong><br>
+            This section will show the total number of published news.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/dashboard2.png">
+        </p>
+
+        <p><strong>Property view statistics</strong><br>
+            This graph will show you the pageviews as month wise.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/dashboard3.png">
+        </p>
+
+    </section>
+
+
+    <section id="datatable_options">
+        <div class="page-header">
+            <h3>Datatable Options</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            DataTables is a table enhancing plug-in that offers sorting, paging and filtering
+            abilities . In this software, datatable is used as a toll for showing data. <br>
+            Here are some of the features and usage for datatable :::
+        </p>
+        <p>
+            <img alt="" src="assets1/images/datatable1.png">
+        </p>
+        <ol>
+            <li>you can select how many records to be shown in a single page (10,25 or all).Default is 10</li>
+            <li><strong>Selector:</strong> You can select all the records/rows and perform action like print to
+                pdf/csv/print or delete multiple rows
+            </li>
+            <li><strong>Search:</strong> Search the records/rows using keywords</li>
+            <li><strong>Sorting:</strong> Sort columns</li>
+        </ol>
+
+        <p>
+            <img alt="" src="assets1/images/datatable2.png">
+        </p>
+        <ol>
+            <li>View details of a specific record</li>
+            <li>Edit/Update a specific record</li>
+            <li>Delete a specific record</li>
+        </ol>
+    </section>
+
+
+    <section id="location">
+        <div class="page-header">
+            <h3>Location</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            <strong>Country List</strong><br>
+            SarchHolm provides an easy to use location module system, where administrator can add multiple
+            countries, and
+            under one country administrator can add state and city .Later on, Administrator can edit /
+            update or delete any location information.
+
+        </p>
+        <p>
+            <img alt="" src="assets1/images/country.png">
+        </p>
+        <p>
+            <strong>State List</strong><br>
+            Administrator can add multiple states, and under a state different cities can be
+            added.Administrator can edit /
+            update or delete any state information.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/state.png">
+        </p>
+        <p>
+            <strong>City List</strong><br>
+            Multiple cities can be added under a state.Administrator can edit /
+            update or delete any city information.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/city.png">
+        </p>
+    </section>
+
+    <section id="property_category">
+        <div class="page-header">
+            <h3>Property Category</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            <strong>Real Estate</strong> -> <strong>Category</strong>.<br>
+            Multiple property categories can be added here.Administrator can edit /
+            update or delete any category information.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/property-category.png">
+        </p>
+    </section>
+
+    <section id="property_facility">
+        <div class="page-header">
+            <h3>Property Facilities</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            <strong>Real Estate</strong> -> <strong>Facilities</strong>.<br>
+            The list of amenities of a property.You can assign one or multiple amenities of properties under this module.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/property-facility.png">
+        </p>
+    </section>
+
+    <section id="property_listing">
+        <div class="page-header">
+            <h3>Property Listing</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            <strong>Real Estate</strong> -> <strong>Properties</strong>.<br>
+            You can view/add/edit/delete multiple properties using this module .
+        </p>
+        <p>
+            <img alt="" src="assets1/images/property.png">
+        </p>
+    </section>
+
+    <section id="packages">
+        <div class="page-header">
+            <h3>Packages</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            Admin can create, edit, update and delete packages. following image is the package list and package create page.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/packages.png">
+        </p>
+        <p>
+            <strong>Package Create</strong>
+            <img src="assets1/images/pacakges-create.png" alt="">
+        </p>
+    </section>
+
+    <section id="blog">
+        <div class="page-header">
+            <h3>Blog</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            Admin can create, edit, update and delete blog categories. following image is the blog category list and blog category create page.
+        </p>
+        <p>
+            <strong>Blog Category List</strong>
+            <img src="assets1/images/blog_category.png" alt="">
+        </p>
+        <p>
+            <strong>Blog Category Create</strong>
+            <img src="assets1/images/blog-category-create.png" alt="">
+        </p>
+        <p>
+            <strong>Tag List</strong>
+            <img src="assets1/images/tags.png" alt="">
+        </p>
+        <p>
+            <strong>Tag Create</strong>
+            <img src="assets1/images/tag_create.png" alt="">
+        </p>
+        <p>
+            <strong>Blog List</strong>
+            <img src="assets1/images/blogs.png" alt="">
+        </p>
+        <p>
+            <strong>Blog Create</strong>
+            <img src="assets1/images/blog_create.png" alt="">
+        </p>
+    </section>
+
+    <section id="profile">
+        <div class="page-header">
+            <h3>Profile</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            Admin can update his profile. following image is the user's profile page.
+        </p>
+        <p>
+            <img alt="" src="assets1/images/profile.png">
+        </p>
+    </section>
+
+    <section id="settings">
+        <div class="page-header">
+            <h3>Settings</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            In Settings section admin can add language,add client testimonials, our partners section and website informations.
+        </p>
+        <p>
+            <strong>Language</strong>
+            <img src="assets1/images/language.PNG" alt="">
+        </p>
+        <p>
+            <strong>Testimonials</strong>
+            <img src="assets1/images/testimonials.PNG" alt="">
+        </p>
+        <p>
+            <strong>Our Partners</strong>
+            <img src="assets1/images/our_partners.PNG" alt="">
+        </p>
+        <p>
+            <strong>Web site Information</strong>
+            <img src="assets1/images/site-information.PNG" alt="">
+        </p>
+    </section>
+
+   
+
+
+    <section id="support">
+        <div class="page-header">
+            <h3>SUPPORT</h3>
+            <hr class="notop">
+        </div>
+        <p>
+            Thanks a lot for using this user friendly software. Hope you found this documentation helpful for using
+            this software. Please support this product by giving your ratings and testimonial.</p>
+        <p>
+            With best wishes - <a href="http://lion-coders.com">LionCoders</a>
+        </p>
+    </section>
+</div>
+<script type="text/javascript">
+
+    $("#documenter_sidebar").mCustomScrollbar({
+        theme: "light",
+        scrollInertia: 200
+    });
+
+
+    var substringMatcher = function (strs) {
+        return function findMatches(q, cb) {
+            var matches, substringRegex;
+
+            // an array that will be populated with substring matches
+            matches = [];
+
+            // regex used to determine if a string contains the substring `q`
+            substrRegex = new RegExp(q, 'i');
+
+            // iterate through the pool of strings and for any string that
+            // contains the substring `q`, add it to the `matches` array
+            $.each(strs, function (i, str) {
+                if (substrRegex.test(str)) {
+                    matches.push(str);
+                }
+            });
+
+            cb(matches);
+        };
+    };
+
+    var states = ['Start',
+        'Server Requirements',
+        'Log In',
+        'Admin Dashboard',
+        'Datatable Options',
+        'Location',
+        'Property Category',
+        'Property Facility',
+        'Property Listing',
+        'Packages',
+        'Blog',
+        'Profile',
+        'Settings',
+        'Support',
+        'Error Handeling'
+    ];
+
+    $('#the-basics .typeahead').typeahead({
+            hint: true,
+            highlight: true,
+            minLength: 1
+        },
+        {
+            name: 'states',
+            source: substringMatcher(states)
+        });
+
+    $('.typeahead').bind('typeahead:select', function (ev, suggestion) {
+        let a = suggestion.toLowerCase();
+        a = a.replace(/\s+/g, "_");
+
+        let site_url = window.location.href;
+
+        site_url = site_url.split("#")[0];
+
+        window.location.href = site_url + '#' + a;
+    });
+
+
+</script>
+</body>
+
+</html>
